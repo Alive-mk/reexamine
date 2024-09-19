@@ -3,7 +3,7 @@ using namespace std;
 int main(){
 	string str;
 //	cin >> str;
-	while(getline(cin, str)){
+	while(getline(cin, str)){// multiple case input
 		vector<string> lst;
 		string tmp = "";
 		for(int i=0; i < str.size(); i++){
