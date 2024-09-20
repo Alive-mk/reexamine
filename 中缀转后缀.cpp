@@ -13,14 +13,22 @@ bool isoperator(char c){
 	return (c == '+' || c == '-' || c == '*' || c == '/');
 }
 int main(){
-	string sline;
-	getline(cin, sline);
-	stringstream ss(sline);
-	vector<char> line;
+//	string sline;
+//	getline(cin, sline);
+//	stringstream ss(sline);
+//	vector<char> line;
+//	char ch;
+//	while(ss >> ch){
+//		line.push_back(ch);
+//	}
 	char ch;
-	while(ss >> ch){
+	vector<char> line;
+	while(cin >> ch){
 		line.push_back(ch);
-	}
+		if(cin.peek() == '\n'){
+			break;
+		}
+	}//  this input method is more convenient.
 	//如果需要中缀转成前缀表达式就反转中缀表达式并且调换括号方向了再进行之后操作就行
 //	reverse(line.begin(), line.end()); 
 //	for(int i=0; i < line.size(); i++){
