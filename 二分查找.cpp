@@ -25,6 +25,31 @@ int bysearch(vector<int> a, int num, int &cnt){
 		}
 	}
 }
+//int bysearch(vector<int> a, int num, int &cnt){
+//	int left = 0;
+//	int right = a.size() - 1;
+//	while(left <= right){
+//		cnt++;
+//		if(left == right){
+//			if(a[left] == num){
+//				return left;
+//			}
+//			else{
+//				return -1;
+//			}
+//		}
+//		int mid = left + (right - left)/2;
+//		if(a[mid] > num){
+//			right = mid - 1;
+//		}
+//		else if(a[mid] < num){
+//			left = mid + 1;
+//		}
+//		else{
+//			return mid;
+//		}
+//	}
+//}
 
 int main(){
 	int tmp;
